@@ -3,8 +3,9 @@ import axios from 'axios';
 import { useForm } from 'react-hook-form'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { useNavigate } from 'react-router-dom';
 const Loginform = () => {
+  const navigate = useNavigate();
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const onSubmit = async (data) => {
     const userInfo = {
@@ -32,7 +33,7 @@ const Loginform = () => {
             sessionStorage.setItem('userId', response.data.userId);
             // toast.success('signup successful..')
             toast.success(response.data.message);
-            window.location.href = '/home';
+             navigate('/home');
           }
         })
       .catch(
