@@ -1,0 +1,76 @@
+.Main-navbar {
+    background-color: #183334;
+    display: flex;
+    justify-content: space-between;
+    padding-left:100px;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.Main-navbar-logo {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.Main-navbar-logo a {
+    color: #cef0e7;
+    text-decoration: none;
+}
+
+.Main-navbar-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main-Navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 75px;
+}
+
+.Main-Navbar-links li a{
+    font-size: 24px;
+}
+
+.Main-Navbar-links a {
+    color: #cef0e7;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.Main-Navbar-links a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.Main-navbar-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+    cursor: pointer;
+    padding-left: 100px;
+}
+
+.profile-icon svg{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-top: 7px;
+    padding: 3px;
+    color: #cef0e7;
+    border: 2px solid #cef0e7;
+}
+
+.profile-text {
+    font-size: 28px;
+    color: #cef0e7;
+    margin-left: 15px;
+}

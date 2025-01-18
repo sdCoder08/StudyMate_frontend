@@ -1,0 +1,105 @@
+.signup-form-container {
+    width: 32%;
+    height: 85%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #cef0e7;
+    box-shadow: 0px 0px 15px 0px #cef0e7;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.signup-form-container form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.SignUp-container h2 {
+    margin-bottom: 1.5rem;
+    color: #cef0e7;
+    font-size: 2rem;
+}
+
+.SignUp-form-group {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+    margin-bottom: 2.3rem;
+    padding: 0 20px;
+}
+
+.SignUp-form-group input::placeholder{
+    color: #cef0e779;
+    font-size: 1.2rem;
+}
+
+.SignUp-form-group span{
+    margin-top: -35px;
+    color: rgba(254, 75, 75, 0.774);
+}
+
+.signup-btn{
+    width: 90%;
+    height: 50px;
+    background-color: #cef0e7;
+    border: 1px solid #cef0e7;
+    border-radius: 20px;
+    color: #183334;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -50px;
+    transition: .4s;
+    position: relative;
+}
+
+.signup-btn:hover{
+    box-shadow: 0px 0px 10px 0px #cef0e7;
+    background-color: #183334;
+    color: #cef0e7;
+}
+
+.SignUp-form-group .input {
+    width: 100%;
+    max-height: 15%;
+}
+ 
+.input input{
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    /* border-radius: 5px; */
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background: transparent;
+    border-bottom: .5px solid #cef0e7;
+    outline: none;
+    color: #cef0e7;
+    font-size: 1.2rem;
+}
+.SignUp-form-group input[type='email']{
+    background-color: transparent;
+}
+
+.signup a {
+    color: #cef0e7;
+}
+
+.signup p{
+    margin-top: 5px;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+

@@ -1,0 +1,181 @@
+.editor {
+  width: 80vw;
+}
+
+/* .quill {
+  margin-left: 40px;
+} */
+
+.ql-toolbar {
+  background-color: #cef0e7;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  height: 5vh;
+  text-align: center;
+}
+
+.ql-container {
+  background-color: #035c68;
+  border-radius: 20px;
+  height: 75vh;
+}
+
+.ql-editor {
+  background-color: #cef0e7;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.file-container-wrapper {
+  width: 20vw;
+  background-color: #cef0e7;
+  padding: 40px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.file-list li {
+  list-style: none;
+  font-size: large;
+  color: #02353c;
+  padding: 5px;
+}
+
+.pallate {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  background-color: #2b5f4e;
+  height: 90vh;
+  width: 100vw;
+}
+
+.file-container-wrapper {
+  position: relative;
+}
+
+.menu-container.blur {
+  filter: blur(1px);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.icon svg {
+  height: 25px;
+  width: 25px;
+}
+
+.file-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-item {
+  padding: 8px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.file-item.file {
+  display: block;
+  cursor: pointer;
+  justify-content: start;
+}
+
+.file-item.folder {
+  display: block;
+  justify-content: start;
+  cursor: pointer;
+  /* flex-direction: column; */
+}
+
+.file-item:hover {
+  background-color: #00796b;
+  color: #cef0e7;
+}
+
+.context-menu {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.context-menu button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.context-menu button:hover {
+  background-color: #004d40;
+}
+
+.file-item svg {
+  margin-right: 10px;
+}
+
+.nested-file-list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.nested-file-list .file-item {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.editor-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title-input {
+  flex: 1;
+  padding: 8px 0 8px 20px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #cef0e7;
+  color: #02353c;
+}
+
+.title-input::placeholder {
+  color: #02353c90;
+}
+
+.save-button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #cef0e7;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  
+  transition: 0.3s;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}

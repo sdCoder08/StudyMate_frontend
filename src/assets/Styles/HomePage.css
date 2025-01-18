@@ -1,0 +1,182 @@
+.container1 {
+    display: flex;
+}
+
+.sidebar1 {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 90vh;
+    background-color: #183334;
+}
+
+.sidebar1 h2 {
+    margin-bottom: 10px;
+    font-size: 34px;
+    color: #cef0e7;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+.sidebar1 hr {
+    border: 2px solid #cef0e7;
+    margin: 0 20px;
+}
+
+.sidebar1 .sidebar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40%;
+    list-style-type: none;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.sidebar1 .sidebar-link {
+    display: flex;
+    padding: 20px 20px;
+    color: #cef0e7;
+    font-size: 20px;
+    transition: 0.3s;
+    height: 60%;
+}
+
+.sidebar1 .sidebar-link:hover {
+    background-color: #2b5f4e;
+    /* color: #183334; */
+    font-weight: bold;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.main-content {
+    width: 85vw;
+    height: 90vh;
+    background-color: #2b5f4e;
+    padding: 50px 40px 0px 40px;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-content .section-heading {
+    font-size: 26px;
+    font-weight:500;
+    position: sticky;
+    top: 0;
+    background-color: #183334;
+    color: #cef0e7;
+    padding: 15px;
+    padding-left: 50px;
+}
+
+.main-content .section {
+    margin-right: 40px;
+    background-color: #183334;
+    color: #cef0e7;
+    border-right:8px solid transparent ;
+    border-radius: 20px;
+    /* box-shadow: 10px 15px 10px #183334; */
+    box-shadow: 5px 10px 10px #cef0e73e;
+    height: 38vh;
+    overflow:hidden;
+    font-weight: 200;
+}
+
+.section .section-body{
+    height: 80%;
+    overflow: scroll;
+    border: 6px solid transparent;
+}
+.section .document-card {
+    padding: 20px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.document-card .document-name{
+    font-size: 20px;
+}
+
+.section .document-card i {
+    font-size: 27px;
+    color: #cef0e7;
+    margin-right: 30px;
+}
+
+.section .document-card h3:hover {
+    cursor: pointer;
+}
+
+.section .progress-bar {
+    padding: 20px;
+    margin: 0 20px;
+    /* border-bottom: 2px solid #02353c; */
+}
+
+.section .progress-bar .progress {
+    font-size: 20px;
+}
+
+.section .progress-bar .progress:hover {
+    cursor: pointer;
+}
+
+.section .tasks-section {
+    padding: 20px;
+    margin: 0 20px;
+    /* border-bottom: 2px solid #02353c; */
+}
+
+.section .task {
+    display: flex;
+    flex-direction: column;
+}
+
+.section .task .task-title {
+    font-size: 20px;
+}
+
+.section .goal-section {
+    padding: 20px;
+    margin: 0 20px;
+    /* border-bottom: 2px solid #02353c; */
+}
+
+.section .goal-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.goal-section .goal{
+    display: flex;
+    align-items: center;
+}
+
+.goal-section .goal-name{
+    font-size: 22px;
+}
+
+.goal .badge{
+    font-size: 20px;
+}
+
+.main-content .blurred {
+    filter: blur(10px);
+}
+
+.main-content .focused {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
